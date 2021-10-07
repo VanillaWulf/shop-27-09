@@ -1,0 +1,36 @@
+.header {
+    background-color: $black;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        min-height: 75px;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        display: none;
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+
+    &__ico {
+        margin: 0 0 0 33px;
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $pink;
+        }
+    }
+
+}
