@@ -12,7 +12,6 @@
 }
 
 body {
-  background-color: aqua;
   font-family: Lato;
   font-size: 14px;
   font-style: normal;
@@ -23,6 +22,10 @@ body {
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.display-block {
+  display: block;
 }
 
 .header {
@@ -36,9 +39,17 @@ body {
 }
 .header__menu {
   display: none;
+  position: absolute;
+  background-color: #FFF;
+  right: 0;
+  bottom: -295px;
+}
+.header__menu_show {
+  display: block;
 }
 .header__box {
   display: flex;
+  position: relative;
 }
 .header__logo {
   margin: 0 41px 0 0;
@@ -58,6 +69,7 @@ body {
   display: flex;
   background-color: #F1E4E6;
   color: white;
+  margin: 0 0 64px;
 }
 .hero .hero-wrp {
   display: flex;
@@ -81,6 +93,26 @@ body {
 }
 .hero .hero__pink {
   background-color: #F16D7F;
+}
+
+.sale .sale__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sale .sale__item {
+  width: 360px;
+  min-height: 260px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sale .sale__item--shoes {
+  width: 100%;
+}
+.sale .sale__item--space {
+  margin: 0 0 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

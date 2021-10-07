@@ -22,11 +22,15 @@
                 <img class="header__search-ico" src="./img/loupe.svg" alt="loupe" width="26" height="28">
             </div>
             <div class="header__box">
-                <button class="header__button header__ico" type="button"><img src="./img/burger.svg" alt="menu"
-                        width="32" height="23"></button>
+                <button class="header__button header__ico" type="button" id="burger">
+                    <svg class="header__icon-burger" width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
+                    </svg>
+
+                </button>
                 <a class="header__ico" href="#"><img src="./img/person.svg" alt="person" width="29" height="29"></a>
                 <a class="header__ico" href="#"><img src="./img/person.svg" alt="person" width="29" height="29"></a>
-                <nav class="header__menu">
+                <nav class="header__menu" id="menu">
                     <h2 class="header__title">menu</h2>
                     <ul class="header__menu-list">
                         <li class="header__menu-item menu-sub-item">
@@ -71,31 +75,32 @@
         <section class="hero">
             <img class="hero__img" src="./img/man.jpg" alt="man" width="800" height="765">
             <div class="hero-wrp">
-                <h1 class="hero__title">the brand <span class="hero__subtitle"> of luxerious <span class="hero__pink">fashion</span></span></h1>
+                <h1 class="hero__title">the brand <span class="hero__subtitle"> of luxerious <span
+                            class="hero__pink">fashion</span></span></h1>
             </div>
         </section>
-        <section class="sale">
+        <section class="sale container">
             <h2 class="visually-hidden">Sale</h2>
             <ul class="sale__list">
-                <li class="sale__item">
+                <li class="sale__item sale__item--woman sale__item--space">
                     <a class="sale__link" href="#">
                         <p class="sale__text">30% off</p>
                         <h3 class="sale__subtitle">for women</h3>
                     </a>
                 </li>
-                <li class="sale__item">
+                <li class="sale__item sale__item--man sale__item--space">
                     <a class="sale__link" href="#">
                         <p class="sale__text">30% off</p>
                         <h3 class="sale__subtitle">for women</h3>
                     </a>
                 </li>
-                <li class="sale__item">
+                <li class="sale__item sale__item--kids sale__item--space">
                     <a class="sale__link" href="#">
                         <p class="sale__text">30% off</p>
                         <h3 class="sale__subtitle">for women</h3>
                     </a>
                 </li>
-                <li class="sale__item">
+                <li class="sale__item sale__item--shoes">
                     <a class="sale__link" href="#">
                         <p class="sale__text">30% off</p>
                         <h3 class="sale__subtitle">for women</h3>
@@ -131,6 +136,7 @@
     <footer>
         это будет футер
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -10,10 +10,19 @@
 
     &__menu {
         display: none;
+        position: absolute;
+        background-color: $white;
+        right: 0;
+        bottom: -295px;
+
+        &_show {
+            display: block;
+        }
     }
 
     &__box {
         display: flex;
+        position: relative;
     }
 
     &__logo {

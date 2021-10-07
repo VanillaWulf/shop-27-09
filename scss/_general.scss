@@ -12,7 +12,6 @@
 }
 
 body {
-    background-color: aqua;
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
@@ -23,4 +22,8 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.display-block {
+    display: block;
 }
