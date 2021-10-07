@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__box">
+                <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                <img class="header__search-ico" src="./img/loupe.svg" alt="loupe" width="26" height="28">
+            </div>
+            <div class="header__box">
+                <button class="header__button header__ico" type="button" id="burger">
+                    <svg class="header__icon-burger" width="32" height="23" viewBox="0 0 32 23" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
+                    </svg>
+
+                </button>
+                <a class="header__ico" href="#"><img src="./img/person.svg" alt="person" width="29" height="29"></a>
+                <a class="header__ico" href="#"><img src="./img/person.svg" alt="person" width="29" height="29"></a>
+                <nav class="header__menu" id="menu">
+                    <h2 class="header__title">menu</h2>
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item menu-sub-item">
+                            <h3 class="menu-sub-item__title">
+                                man
+                            </h3>
+                            <ul class="menu-sub-item__list">
+                                <li class="menu-sub-item__item">Accessories</li>
+                                <li class="menu-sub-item__item">Bags</li>
+                                <li class="menu-sub-item__item">Denim</li>
+                                <li class="menu-sub-item__item">T-Shirts</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>
+                                man
+                            </h3>
+                            <ul>
+                                <li class="menu-sub-item__item">Accessories</li>
+                                <li class="menu-sub-item__item">Bags</li>
+                                <li class="menu-sub-item__item">Denim</li>
+                                <li class="menu-sub-item__item">T-Shirts</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>
+                                man
+                            </h3>
+                            <ul>
+                                <li class="menu-sub-item__item">Accessories</li>
+                                <li class="menu-sub-item__item">Bags</li>
+                                <li class="menu-sub-item__item">Denim</li>
+                                <li class="menu-sub-item__item">T-Shirts</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-info">
+            <h1 class="page-info__title">registration</h1>
+        </section>
+        <div class="wrp">
+            <section class="form">
+                <form action="">
+                    <fieldset>
+                        <legend class="form__legend">Your Name</legend>
+                        <input id="first-name" type="text" placeholder="First Name">
+                        <label for="first-name" class="visually-hidden">First Name</label>
+
+                        <label>
+                            <input type="text" placeholder="Last Name">
+                            <span class="visually-hidden">Last Name</span>
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="form__legend">Login details</legend>
+                        <input id="email" type="email" placeholder="Email">
+                        <label for="email" class="visually-hidden">Email</label>
+
+                        <label>
+                            <input type="password" placeholder="Password">
+                            <span class="visually-hidden">Password</span>
+                        </label>
+                    </fieldset>
+                    <button type="submit">join now</button>
+                </form>
+            </section>
+            <section class="perks">
+
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
