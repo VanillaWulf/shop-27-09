@@ -6,11 +6,21 @@
     } 
 
     .sale__item {
-        width: 360px;
+        width: 31.6%;
         min-height: 260px;
-        background-color: aquamarine;
+        background-color: #524a4a;
 
         @include flex-center;
+
+        @include tablet {
+            width: 31.5%;
+            min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+        }
     }
 
     .sale__item--shoes {
