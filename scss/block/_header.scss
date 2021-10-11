@@ -6,6 +6,14 @@
         align-items: center;
         min-height: 75px;
         justify-content: space-between;
+
+        @include tablet {
+            padding: 0 16px;
+        }
+
+        @include mobile {
+            padding: 0;
+        }
     }
 
     &__menu {
@@ -41,5 +49,5 @@
             background-color: $pink;
         }
     }
-
 }
+

@@ -4,24 +4,60 @@
     color: white;
     margin: 0 0 64px;
 
+    @include mobile {
+        min-height: 363px;
+    }
+
     .hero-wrp {
         display: flex;
         align-items: center;
         padding: 0 0 0 92px;
+
+        @include tablet {
+            padding: 0 0 0 68px;
+        }
     }
     
     .hero__title {
         font-family: Lato;
-        @include font(48px, 58px, 900);
         text-transform: uppercase;
+        @include font(48px, 58px, 900);
+
+        @include tablet {
+            @include font(44px, 53px, 900);
+        }
+
+        @include mobile {
+            @include font(38px, 46px, 900)
+        }
     }
     
     .hero__subtitle {
         display: block;
         @include font(37px, 44px, 700);
+
+        @include tablet {
+            @include font(24px, 28px, 700);
+        }
+
+        @include mobile {
+            @include font(20px, 24px, 700);
+        }
     }
     
     .hero__pink {
         background-color: $dark-pink;
+    }
+
+    .hero__img {
+        @include tablet {
+            height: 100%;
+            width: 50%;
+            object-fit: contain;
+        }
+
+        @include mobile {
+            display: none;
+        }
     }
 }
